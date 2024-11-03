@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КоробкаЗОсвітленням</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            position: absolute;
+            border: 2px solid black;
+        }
+        .controls {
+            position: relative;
+            display: flex;
+            top: 340px;
+            margin-top: 10px;
+        }
+        .controls label
+        {
+            position: relative;
+            margin-left: 10px;
+            
+            height: 30px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+</head>
+<body>
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+    <div class="controls">
+        <label>Коробка з освітленням.</label>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
